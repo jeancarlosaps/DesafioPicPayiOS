@@ -14,6 +14,9 @@
 		0FABDF37223C311500BAC533 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FABDF35223C311500BAC533 /* LaunchScreen.storyboard */; };
 		0FF325BA223FD55E00C57CFE /* ContactsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF325B9223FD55E00C57CFE /* ContactsModel.swift */; };
 		0FF325BD223FE64D00C57CFE /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF325BC223FE64D00C57CFE /* DesignableTextField.swift */; };
+		0FF325C02240112C00C57CFE /* ContactsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF325BF2240112C00C57CFE /* ContactsTableViewCell.swift */; };
+		0FF325C222401C3400C57CFE /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF325C122401C3400C57CFE /* ContactsTableViewController.swift */; };
+		0FF325C522401C6400C57CFE /* ContactAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF325C422401C6400C57CFE /* ContactAPI.swift */; };
 		74643928747525B3BE0F2FA3 /* Pods_DesafioPicPayiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B9ABE52DC5581C31A587A24 /* Pods_DesafioPicPayiOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +30,9 @@
 		0FABDF38223C311500BAC533 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0FF325B9223FD55E00C57CFE /* ContactsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsModel.swift; sourceTree = "<group>"; };
 		0FF325BC223FE64D00C57CFE /* DesignableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableTextField.swift; sourceTree = "<group>"; };
+		0FF325BF2240112C00C57CFE /* ContactsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTableViewCell.swift; sourceTree = "<group>"; };
+		0FF325C122401C3400C57CFE /* ContactsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTableViewController.swift; sourceTree = "<group>"; };
+		0FF325C422401C6400C57CFE /* ContactAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactAPI.swift; sourceTree = "<group>"; };
 		5221C097617184236D8B4506 /* Pods-DesafioPicPayiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioPicPayiOS.release.xcconfig"; path = "Target Support Files/Pods-DesafioPicPayiOS/Pods-DesafioPicPayiOS.release.xcconfig"; sourceTree = "<group>"; };
 		8B9ABE52DC5581C31A587A24 /* Pods_DesafioPicPayiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesafioPicPayiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A864E19BB9380C0DC12ADC4A /* Pods-DesafioPicPayiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioPicPayiOS.debug.xcconfig"; path = "Target Support Files/Pods-DesafioPicPayiOS/Pods-DesafioPicPayiOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -65,11 +71,14 @@
 		0FABDF2B223C311200BAC533 /* DesafioPicPayiOS */ = {
 			isa = PBXGroup;
 			children = (
+				0FF325C322401C4D00C57CFE /* API */,
+				0FF325BE2240111300C57CFE /* Cell */,
 				0FF325BB223FE60D00C57CFE /* Extensions */,
 				0FF325B8223FD54A00C57CFE /* Models */,
 				0FABDF2C223C311200BAC533 /* AppDelegate.swift */,
 				0FABDF2E223C311200BAC533 /* ContactsViewController.swift */,
 				0FABDF30223C311300BAC533 /* Contacts.storyboard */,
+				0FF325C122401C3400C57CFE /* ContactsTableViewController.swift */,
 				0FABDF33223C311500BAC533 /* Assets.xcassets */,
 				0FABDF35223C311500BAC533 /* LaunchScreen.storyboard */,
 				0FABDF38223C311500BAC533 /* Info.plist */,
@@ -91,6 +100,22 @@
 				0FF325BC223FE64D00C57CFE /* DesignableTextField.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0FF325BE2240111300C57CFE /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0FF325BF2240112C00C57CFE /* ContactsTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		0FF325C322401C4D00C57CFE /* API */ = {
+			isa = PBXGroup;
+			children = (
+				0FF325C422401C6400C57CFE /* ContactAPI.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 		6EB561CDBD602CD70CF9F10E /* Frameworks */ = {
@@ -234,6 +259,9 @@
 			files = (
 				0FABDF2F223C311200BAC533 /* ContactsViewController.swift in Sources */,
 				0FF325BA223FD55E00C57CFE /* ContactsModel.swift in Sources */,
+				0FF325C222401C3400C57CFE /* ContactsTableViewController.swift in Sources */,
+				0FF325C02240112C00C57CFE /* ContactsTableViewCell.swift in Sources */,
+				0FF325C522401C6400C57CFE /* ContactAPI.swift in Sources */,
 				0FABDF2D223C311200BAC533 /* AppDelegate.swift in Sources */,
 				0FF325BD223FE64D00C57CFE /* DesignableTextField.swift in Sources */,
 			);

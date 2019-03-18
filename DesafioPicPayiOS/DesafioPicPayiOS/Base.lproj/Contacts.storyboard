@@ -30,7 +30,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="contacts" rowHeight="115" id="d3a-7Q-cPl">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="contacts" rowHeight="115" id="d3a-7Q-cPl" customClass="ContactsTableViewCell" customModule="DesafioPicPayiOS" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="115"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="d3a-7Q-cPl" id="T5a-q9-CkP">
@@ -58,6 +58,11 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="imgContact" destination="9mc-zL-xfS" id="RPP-jk-Oa5"/>
+                                            <outlet property="lblName" destination="5hB-bV-W7z" id="ovY-zw-Tt3"/>
+                                            <outlet property="lblUserName" destination="cCV-HV-aG9" id="o1v-9d-VkU"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

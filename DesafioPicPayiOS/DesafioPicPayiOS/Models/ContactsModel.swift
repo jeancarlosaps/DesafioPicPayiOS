@@ -11,6 +11,6 @@ import Foundation
 struct Contacts: Codable {
   let id: Int
   let name: String
-  let img: String
+  let URLimg: String
   let username: String
 }
