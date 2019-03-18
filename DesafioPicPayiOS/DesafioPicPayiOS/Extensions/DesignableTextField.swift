@@ -10,6 +10,12 @@ import UIKit
 
 @IBDesignable
 class DesignableTextField: UITextField {
+  
+  @IBInspectable var cornerRadius: CGFloat = 0 {
+    didSet {
+      layer.cornerRadius = cornerRadius
+    }
+  }
 
   @IBInspectable var leftImage: UIImage? {
     didSet {
@@ -29,6 +35,7 @@ class DesignableTextField: UITextField {
       
       let imageView = UIImageView(frame: CGRect(x: leftPadding, y: 0, width: 20, height: 20))
       imageView.image = image
+      imageView.tintColor = tintColor
       
       let width = leftPadding - 50
       
