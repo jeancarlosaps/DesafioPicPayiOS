@@ -29,7 +29,7 @@ class ContactsTableViewCell: UITableViewCell {
     lblName.text = contact.name
     
     //Download Images
-    if let url = URL(string: contact.URLimg) {
+    if let url = URL(string: contact.img) {
       imgContact.kf.indicatorType = .activity
       imgContact.kf.setImage(with: url)
     } else {

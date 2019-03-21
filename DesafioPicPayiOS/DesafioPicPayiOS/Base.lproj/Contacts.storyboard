@@ -37,25 +37,37 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="114.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9mc-zL-xfS">
-                                                    <rect key="frame" x="15" y="17" width="80" height="80"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9mc-zL-xfS">
+                                                    <rect key="frame" x="21" y="17" width="80" height="80"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="80" id="YHX-NN-u97"/>
+                                                        <constraint firstAttribute="width" constant="80" id="qEY-RE-vHc"/>
+                                                    </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="@aliceromero" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cCV-HV-aG9">
-                                                    <rect key="frame" x="103" y="17" width="110" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@aliceromero" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cCV-HV-aG9">
+                                                    <rect key="frame" x="108" y="17" width="252" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Alice Romero" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hB-bV-W7z">
-                                                    <rect key="frame" x="103" y="46" width="100" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alice Romero" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hB-bV-W7z">
+                                                    <rect key="frame" x="108" y="46" width="252" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
                                                     <color key="textColor" red="0.61960784310000006" green="0.61960784310000006" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="5hB-bV-W7z" firstAttribute="top" secondItem="cCV-HV-aG9" secondAttribute="bottom" constant="8" id="C3P-gV-mlr"/>
+                                                <constraint firstItem="9mc-zL-xfS" firstAttribute="leading" secondItem="T5a-q9-CkP" secondAttribute="leadingMargin" constant="6" id="D1y-iQ-C5i"/>
+                                                <constraint firstItem="5hB-bV-W7z" firstAttribute="leading" secondItem="9mc-zL-xfS" secondAttribute="trailing" constant="7" id="E8r-3B-BVw"/>
+                                                <constraint firstItem="cCV-HV-aG9" firstAttribute="top" secondItem="T5a-q9-CkP" secondAttribute="top" constant="17" id="IgR-Kd-9FQ"/>
+                                                <constraint firstItem="cCV-HV-aG9" firstAttribute="leading" secondItem="9mc-zL-xfS" secondAttribute="trailing" constant="7" id="NV2-Yf-Mam"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="5hB-bV-W7z" secondAttribute="bottom" constant="37" id="Y7f-IW-7qo"/>
+                                                <constraint firstItem="9mc-zL-xfS" firstAttribute="top" secondItem="T5a-q9-CkP" secondAttribute="topMargin" constant="6" id="nFA-zl-pA1"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="cCV-HV-aG9" secondAttribute="trailing" id="rN3-B6-UHD"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="5hB-bV-W7z" secondAttribute="trailing" id="t0K-ED-z47"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
@@ -65,6 +77,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="Xt0-cM-1XG"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="fzg-hx-WAv"/>
+                                </connections>
                             </tableView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="A quem você deseja pagar?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QbN-5d-G54" customClass="DesignableTextField" customModule="DesafioPicPayiOS" customModuleProvider="target">
                                 <rect key="frame" x="40" y="89" width="295" height="30"/>
@@ -89,6 +105,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="tbContacts" destination="fdw-t1-utl" id="8Kj-Qw-Aiu"/>
                         <outlet property="tfSearchContacts" destination="QbN-5d-G54" id="T3q-sz-V4L"/>
                     </connections>
                 </viewController>
